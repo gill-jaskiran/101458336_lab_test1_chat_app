@@ -4,6 +4,9 @@
 **Student Number:** 101458335
 
 ## Overview
+Use npm install
+and node server.js to run on your end 
+
 A more detailed explanation of all the features and more can be found on the unlisted youtube video linked in the D2L submission Box
 
 ## Screenshots
