@@ -1,0 +1,134 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body and overall layout */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(241, 220, 223);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .chat-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Increased width for wider layout */
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%; /* Reduced height for a more compact look */
+    max-height: 600px; /* Maximum height limit */
+  }
+  
+  /* Logout button style */
+  #logoutButton {
+    background-color: #dc3545; /* Red for logout */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px; /* Space between the logout button and other elements */
+  }
+  
+  #logoutButton:hover {
+    background-color: #c82333;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #roomSelect {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #joinRoom {
+    background-color: #1a8421;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #joinRoom:hover {
+    background-color: #26602a;
+  }
+  
+  #chatMessages {
+    height: 250px; /* Reduced height for the chat messages area */
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Flexbox layout for message input and send button */
+  .message-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #messageInput {
+    width: 85%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  #sendMessage {
+    background-color: #1a8421;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px; /* Adjusted width to fit the layout better */
+    margin-left: 10px;
+  }
+  
+  #sendMessage:hover {
+    background-color: #26602a;
+  }
+  
+  /* For mobile view */
+  @media (max-width: 600px) {
+    .chat-container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    #messageInput {
+      width: 75%;
+    }
+  
+    #sendMessage {
+      width: 60px;
+    }
+  }
+  
